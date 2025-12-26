@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #defa9ea4, #4eac98);
+
+}
+.contanier {
+    max-width: 1000px;
+    width: 600px;
+    height: auto;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+    box-shadow: 5px 0px 10px 5px rgb(255, 255, 255);
+    box-shadow: 0 4px 15px rgba(10, 10, 10, 0.5);
+    margin-top: 2%;
+}
+.heading2{
+    padding: 10px;
+    font-size: 22px;
+    color: aliceblue;
+    text-shadow:2px 2px 2px rgb(0, 0, 0);
+}
+.input {
+    padding: 10px;
+    width: 65%;
+    /* border: 1px solid black; */
+    border: none;
+    font-size: 15px;
+    /* border-radius: 10px; */
+    margin: 5px;
+    box-shadow: inherit;
+}
+.input:focus {
+    outline: none;
+    background-color: antiquewhite;
+}
+
+.add-btn, .del-all {
+    padding: 12px;
+    font-weight: bolder;
+    /* border-radius: 10px; */
+    /* border-style: dashed; */
+    /* border-width: 0.1cap; */
+    border: none;
+    box-shadow: inherit;
+}
+.del-btn {
+    border: none;
+    padding: 5px;
+    background: none;
+    color: black;
+}
+.add-btn:hover, .del-all:hover{
+    background-color: #ac774e;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1cap solid black;
+    padding: 5px;
+    margin: 5px;
+    width: 100%;
+    list-style: decimal;
+    overflow-wrap:anywhere;
+    line-height: 23px;
+    text-align: left;
+
+}
+/* li text {
+    position: fixed;
+    overflow: hidden;
+} */
