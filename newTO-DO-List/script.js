@@ -8,7 +8,6 @@ function addNote(){
     if(inputValue === "")return;
 
     const li = document.createElement('li');
-    // li.innerText = inputValue;
     
     const text = document.createElement('span');
     text.innerText = inputValue;

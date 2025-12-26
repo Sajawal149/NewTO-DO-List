@@ -14,31 +14,29 @@ body{
 .contanier {
     max-width: 1000px;
     width: 600px;
-    height: auto;
+    height: 90vh;
+    overflow-y: scroll;
     padding: 25px;
     text-align: center;
     border-radius: 10px;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-    background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
-    box-shadow: 5px 0px 10px 5px rgb(255, 255, 255);
     box-shadow: 0 4px 15px rgba(10, 10, 10, 0.5);
-    margin-top: 2%;
+    margin: 2%;
 }
 .heading2{
     padding: 10px;
-    font-size: 22px;
+    font-size: 32px;
+    font-weight:bolder;
     color: aliceblue;
     text-shadow:2px 2px 2px rgb(0, 0, 0);
 }
 .input {
     padding: 10px;
     width: 65%;
-    /* border: 1px solid black; */
     border: none;
     font-size: 15px;
-    /* border-radius: 10px; */
     margin: 5px;
     box-shadow: inherit;
+    text-align: left;
 }
 .input:focus {
     outline: none;
@@ -48,11 +46,10 @@ body{
 .add-btn, .del-all {
     padding: 12px;
     font-weight: bolder;
-    /* border-radius: 10px; */
-    /* border-style: dashed; */
-    /* border-width: 0.1cap; */
     border: none;
     box-shadow: inherit;
+    border-radius: 5px;
+    transition: 0.2s;
 }
 .del-btn {
     border: none;
@@ -61,14 +58,18 @@ body{
     color: black;
 }
 .add-btn:hover, .del-all:hover{
-    background-color: #ac774e;
+    background-color: #94e2e7;
+}
+.add-btn:active, .del-all:active{
+    padding: 10px;
+    transform: scale(0.95);
 }
 
 li {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
-    border: 0.1cap solid black;
+    border-bottom: 0.1cap solid black;
     padding: 5px;
     margin: 5px;
     width: 100%;
@@ -76,9 +77,22 @@ li {
     overflow-wrap:anywhere;
     line-height: 23px;
     text-align: left;
-
 }
-/* li text {
-    position: fixed;
-    overflow: hidden;
-} */
+::-webkit-scrollbar {
+    width: 10px;              /* vertical scrollbar */
+    height: 10px;             /* horizontal scrollbar */
+}
+::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.05);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(78, 166, 172, 0.6);
+    border-radius: 10px;
+}
+
+/* Scrollbar thumb hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(97, 197, 214, 0.9);
+}
+
